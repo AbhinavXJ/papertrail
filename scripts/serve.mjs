@@ -38,6 +38,11 @@ function headersFor(pathname) {
 export function startServer(port = PORT) {
   const server = createServer((req, res) => {
     const url = new URL(req.url ?? "/", "http://localhost");
+    // Vercel Analytics endpoints only exist on Vercel; answer them locally so pages load cleanly.
+    if (url.pathname.startsWith("/_vercel/insights/")) {
+      if (url.pathname.endsWith("/script.js")) return res.writeHead(200, { "content-type": TYPES[".js"], ...headersFor(url.pathname) }).end("/* Vercel Analytics runs only on Vercel deployments */\n");
+      return res.writeHead(204).end();
+    }
     const p = normalize(decodeURIComponent(url.pathname)).replace(/^(\.\.[/\\])+/, "");
     let file = join(ROOT, p);
     if (!file.startsWith(ROOT)) return res.writeHead(403).end();

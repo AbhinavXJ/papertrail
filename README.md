@@ -2,7 +2,7 @@
 
 **Everything important you own, documented and searchable.**
 
-Papertrail is a private, local-first document memory that runs entirely in the browser. Import receipts, bills, warranties, policies, leases, manuals and travel documents. Papertrail extracts their text on your device, keeps them in this browser's storage, makes them instantly searchable and helps you remember the dates that matter. There's no account, no server, and nothing gets uploaded.
+Papertrail is a private, local-first document memory that runs entirely in the browser. Import receipts, bills, warranties, policies, leases, manuals and travel documents. Papertrail extracts their text on your device, keeps them in this browser's storage, makes them instantly searchable and helps you remember the dates that matter. There's no account and no server. We use Vercel Analytics for usage analytics. Your documents never leave your browser.
 
 ## Run it
 

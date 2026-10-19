@@ -11,7 +11,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 # PAPERTRAIL — private, local-first document memory
 
 A static Next.js 16 app (`output: "export"`). No backend, no API routes, no server actions,
-no auth, no analytics, no third-party requests. Documents never leave the browser.
+no auth, no third-party requests. Vercel Analytics (`<Analytics />` in `src/app/layout.tsx`, served from
+the site's own origin) is used for usage analytics. Documents never leave the browser.
 
 ## Commands
 

@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       <p className="eyebrow">Privacy</p>
       <h1 className="serif mt-2 text-[clamp(30px,4vw,40px)] font-medium leading-tight tracking-[-0.02em]">How your data is handled</h1>
       <p className="mt-3 text-[16px] leading-relaxed text-ink-2">
-        PAPERTRAIL is a website that runs entirely in your browser. It has no server-side component of its own, no accounts and no analytics. Here is exactly what happens to your documents.
+        PAPERTRAIL is a website that runs entirely in your browser. It has no server-side component of its own and no accounts. We use Vercel Analytics for usage analytics. Your documents never leave your browser.
       </p>
 
       <div className="mt-8">
